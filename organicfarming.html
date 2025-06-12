@@ -1,0 +1,435 @@
+<html>
+<head>
+<title>CAREERGUIDE</title>
+<style>
+  *{
+margin: 0%;
+
+  
+  }
+.para {
+background-color: blue;
+font-family: bold;
+
+  color: white;
+width: 1600px ;
+height: 36px ;
+padding-top: 20;
+padding-right: 10 ;
+padding-left: 10 ;
+
+padding-bottom: 15 ;
+}
+
+.concept  {
+font-size: 20;
+font-family: arial, san-serif;
+color: white; 
+
+}
+.scroll {
+font-size: 20;
+color: black;
+width: 600;
+}
+.button3 {
+  border-radius: 10px;
+  background-color: indigo;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: none;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 20px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+
+.button2 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 20px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.button4 {
+  border-radius: 10px;
+  background-color:blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button4:hover span {
+  padding-right: 20px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+.navbar {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.navbar1 {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar1 a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown1 .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown1:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown1-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.student {
+  display: student;
+  width: 25%;
+  height:7%;
+  border: none;
+  background-color: indigo; 
+  color: #0cc2ef;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.txt{
+font-size:30px;
+color: white;
+  background-color: #f4511e; 
+border: none;
+padding-bottom: 10;
+}
+
+.sudent:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+div {
+  background-color: rgba(211, 211, 211, 0.1);
+  width: 1300px;
+  border: 120px solid rgba(0, 0, 0, 0.048);
+  border-top: 70px solid rgba(0, 0, 0, 0.052);
+  padding: 0%;
+  margin: 0%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20;
+}
+
+</style>
+</head>
+<body style="background-image: url('images.jpg');">
+  <pre><span class= "para"><button onclick = "window.location.href ='home.html';" class="button2"><span>HOME</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='gogreen.html';" class="button2"><span>GOGREEN</span></button>&emsp;&emsp; <button onclick = "window.location.href ='healthcare.html';" class="button2"><span>HEALTH CARE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick = "window.location.href ='carrerguide.html';" class="button2"><span>CARRER GUIDE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='sports.php';" class="button2"><span>SPORTS</span></button> <button  onclick = "window.location.href ='referencecenter.html';"class="button4"><span>REFERENCE CENTER</span></button> </span></pre> 
+<pre> 
+    <div>
+ <h2> Organic farming</h2><h4> organic farming, sustainable agricultural system that uses ecologically based pest controls and biological fertilizers derived largely 
+  from animal and  plant wastes and nitrogen-fixing cover crops. Modern organic farming was developed as a response to the 
+  environmental harm caused by the use of chemical pesticides and synthetic fertilizers in conventional agriculture, and it
+   has numerous ecological benefits.</h4>
+<h2>History</h2><h4> The concepts of organic agriculture were developed in the early 1900s by Sir Albert Howard, F.H. King, 
+  Rudolf Steiner, and others who believed that the use of animal manures (often made into compost), cover crops, crop rotation,
+ and biologically based pest controls resulted in a better farming system. </h4>
+<h2>Regulation</h2><h4>Organic agriculture is defined formally by governments. Farmers must be certified for their produce 
+  and products to be labeled “organic,” and there are specific organic standards for crops, animals, and wild-crafted products 
+  and for the processing of agricultural products. Organic standards in the European Union (EU) and the United States, for
+   example, prohibit the use of synthetic pesticides, fertilizers, ionizing radiation, sewage sludge, and genetically engineered
+    plants or products. In the EU, organic certification and inspection is carried out by approved organic control bodies
+     according to EU standards.Organic farming has been defined by the National Organic Standards of the U.S. Department 
+     of Agriculture (USDA) since 2000, and there are many accredited organic certifiersacross the country.</h4>
+<h2>Advantages of Organic Farming</h2><h3> Economical: </h3><h4>In organic farming, no expensive fertilisers, pesticides, or HYV seeds are required 
+  for the plantation of  crops. Therefore, there is no extra expense.</h4>
+<h3> Good return on Investment:</h3>
+<h4> With the usage of cheaper and local inputs, a farmer can make a good return on investment.</h4>
+<h3>High demand: </h3>
+<h4>There is a huge demand for organic products in India and across the globe, which generates more income through export.</h4>
+<h3> Nutritional:</h3>
+<h4> As compared to chemical and fertiliser-utilised products, organic products are more nutritional, tasty, and good for health.</h4>
+<h3>Environment-friendly: </h3>
+<h4>The farming of organic products is free of chemicals and fertilisers, so it does not harm the environment.</h4>
+<h2> Disadvantages of Organic Farming</h2>
+<h3>Incompetent:</h3>
+<h4> The major issue of organic farming is the lack of inadequate infrastructure and marketing of the product.</h4>
+<h3> Less production:</h3> 
+<h4>The products obtained through organic farming are less in the initial years as compared to that in chemical products.
+   So, farmers find it difficult to accommodate large-scale production.</h4>
+<h3>Shorter shelf life:</h3>
+<h4> Organic products have more flaws and a shorter shelf life than that of chemical products.</h4>
+<h3>Limited production:</h3>
+<h4> Off-season crops are limited and have fewer options in organic farming.</h4>
+<h2> Types of Organic Farming</h2>
+<h4>  Organic farming is divided into two types, namely:
+ 1.Integrated organic farming
+ 2.Pure organic farming</h4>
+<h2>Pure Organic Farming</h2>
+<h4>
+ As the name of this farming process suggests, it uses natural ways for cultivation. Pure organic farming completely
+  avoids inorganic chemicals that may harm the  soil, crop, and people who consume it.In this process, farmers use 
+  organic fertilizers and bio-pesticides derived from natural sources—for example- bone meal, blood meal, etc.
+</h4>
+<h2>Integrated Organic Farming</h2>
+<h4>The integrated farming process consists of integrating pest management and nutrients management to achieve ecological
+   requirements and fulfill the economic demands also. Methods of Organic Farming </h4>
+<h3>Crop Rotation:</h3>
+<h4>Crop rotation, planting a different crop on a particular piece of land each growing season, is required in organic
+   crop production because it  is such a useful tool in preventing soil dis- eases, insect pests, weed problems, and
+    for building healthy soils.
+</h4>
+<h3> Green Manure: </h3>
+<h4>Green manure is a type of organic fertilizer where an entire fresh plant or plant part (e.g.,. Leaf) is directly
+   used as manure in agriculture lands, without any  prior decomposition or composting.
+</h4>
+<h3>Compost:</h3>
+<h4>A mass of rotted organic matter made from waste is called compost. The compost made from farm waste like sugarcane
+   trash, paddy straw, weeds and other plants and other waste is called farm compost. 
+ </h4>
+<h3>Crop diversity:</h3>
+<h4>  Diversity within a crop includes genetically-influenced attributes such as seed size, branching pattern, height,
+   flower color, fruiting time, and flavor. Crops can also vary in less obvious characteristics such as their response
+    to heat, cold, a drought, or their ability to resist specific diseases and pests.
+</h4>
+<h3>Soil Management:</h3>
+<h4>Organic farming recognises the soil as being central to a sustainable farming system. Soil fertility is determined
+   by a set of interactions: Organic matter is essential  for soil fertility.It maintains good soil physical conditions 
+   (e.g. soil structure, aeration and water holding capacity).
+ </h4>
+ <h3> Controlling pests Biologically:</h3>
+<h4>Practices that are often compatible with biological control include cultural controls, crop rotation, insectary 
+  plantings, trap crops, planting pest-resistant varieties, using approved insecticides with selective modes of 
+  action, or spot treatments that leave untreated areas to serve as refuges for natural enemies.
+ </h4>
+ <h3>Weed Management:</h3>
+<h4>Organic weed control is an approach to weed removal and prevention that does not involve the use of synthetic 
+  chemicals and weed killers. Some organic weed control   strategies are cultural and mechanical methods, focusing
+   on prevention, crop rotation, and cultivation
+ </h4>.
+<h3>Livestock:</h3>
+<h4>Livestock on an organic farm plays the main role in Nutrient cycling a process in which nutrients are returned to
+   the soil through manure & compost. Amending soils   with animal manures can increase microbial biomass, enzymatic 
+   activity & alter the structure of the microbial community.
+ </h4> 
+    
+</pre>      
+</div>
+
+
+</body>
+</html>
