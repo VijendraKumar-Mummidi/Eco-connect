@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>E-CONNECT</title>
+<style>
+
+*{
+  margin: 0%;
+  
+    
+    }
+    body{
+      background-image:url('plant.jpg');
+      background-repeat: no-repeat;
+      background-size: 150%;
+
+    }
+.body {
+background-image:url('b2c.jpg');
+ background-size:cover;
+}
+.para {
+background-color: blue;
+font-family: bold;
+
+  color: white;
+width: 1600px ;
+height: 36px ;
+padding-top: 20;
+padding-right: 25 ;
+padding-left: 10 ;
+
+padding-bottom: 10 ;
+}
+
+.concept  {
+  background-color: #f4511e;
+font-size: 20;
+font-family: arial, san-serif;
+color: white; 
+
+}
+.scroll {
+font-size: 20;
+color: black;
+width: 600;
+}
+
+
+.button2 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 20px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+.button3 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 20px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.label1 {
+  font-size: 20;
+ 
+  font-family: arial, san-serif;
+  color: black; 
+
+}
+
+.navbar {
+ border-radius: 20px;
+  background-color: white;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 60%;
+  height:16%;
+}
+
+.navbar a {
+text-align: center;
+  float: right;
+  font-size: 11px;
+  color: rgb(217, 36, 36);
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+</style>
+</head>
+<body >
+<br>
+<h2>HELP:----</h2><br>
+<p>
+  <label class="label1">NECESSARY DATE : <input type="date"
+    name="birthDate" style="width: 200px; height: 30px; background-color: #FFFFFF; font-size: 25px;"></label>
+</p>
+
+
+<p> 
+  <label > <label class="label1">SELECT BLOODGROUP :</label>
+    
+    &emsp;&emsp;&emsp;<br>
+        
+    <div class="navbar">
+      
+      <div class="dropdown">
+        <button  style="background-color: rgb(149, 245, 146);" class="dropbtn"  onclick = "window.location.href='inter.html';">  REQUIRED BLOODGROUP
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div  style="background-color:white" class="dropdown-content">
+          <a href="opositive.php">O-POSITIVE</a>
+          <a href="onegative.php">O-NEGATIVE</a>
+          <a href="bpositive.php">B-POSITIVE</a>
+          <a href="bnegative.php">B-NEGATIVE</a>
+          <a href="apositive.php">A-POSITIVE</a>
+          <a href="anegative.php">A-NEGATIVE</a>
+          <a href="abpositive.php">AB-POSITIVE</a>
+          <a href="abnegative.php">AB-NEGATIVE</a>
+    
+       </div>
+      </div> 
+    </div>
+        <h3>DESCRIPTION:--</h3>
+        <textarea name="bloodgroup" cols="40"
+        rows="4"></textarea>
+        
+        <br>
+  </label>
+</p>
+
+
+<p>
+  <button class="concept" type="submit">Submit</button>
+</p>
+<br><br><br>
+ 
+</body>
+</html>

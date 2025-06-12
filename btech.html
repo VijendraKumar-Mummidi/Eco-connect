@@ -1,0 +1,518 @@
+<html>
+<head>
+<title>CAREERGUIDE</title>
+<style>
+  *{
+margin: 0%;
+
+  
+  }
+.para {
+background-color: blue;
+font-family: bold;
+
+  color: white;
+width: 1600px ;
+height: 36px ;
+padding-top: 20;
+padding-right: 10 ;
+padding-left: 10 ;
+
+padding-bottom: 15 ;
+}
+
+.concept  {
+font-size: 20;
+font-family: arial, san-serif;
+color: white; 
+
+}
+.scroll {
+font-size: 20;
+color: black;
+width: 600;
+}
+.button3 {
+  border-radius: 10px;
+  background-color: indigo;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 20px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+
+.button2 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 20px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.button4 {
+  border-radius: 10px;
+  background-color:blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button4:hover span {
+  padding-right: 20px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+.navbar {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.navbar1 {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar1 a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown1 .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown1:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown1-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.student {
+  display: student;
+  width: 25%;
+  height:7%;
+  border: none;
+  background-color: indigo; 
+  color: #0cc2ef;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.txt{
+font-size:30px;
+color: white;
+  background-color: #f4511e; 
+border: none;
+padding-bottom: 10;
+}
+
+.sudent:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body style="background-color: #FFFFFF;">
+  <pre><span class= "para"><button onclick = "window.location.href ='home.html';" class="button2"><span>HOME</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='gogreen.html';" class="button2"><span>GOGREEN</span></button>&emsp;&emsp; <button onclick = "window.location.href ='healthcare.html';" class="button2"><span>HEALTH CARE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick = "window.location.href ='carrerguide.html';" class="button2"><span>CARRER GUIDE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='sports.php';" class="button2"><span>SPORTS</span></button> <button  onclick = "window.location.href ='referencecenter.html';"class="button4"><span>REFERENCE CENTER</span></button> </span></pre> 
+
+
+<pre>
+<span style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20; box-shadow: #ddd; color: black; margin: 0%; border: 0px;">
+  <br>
+<h2>B.TECH:---</h2>
+<h4>
+  The full form of BTech is Bachelor of Technology (BTech). It is a professional undergraduate engineering degree course awarded to candidates after they complete four years of study in the field.
+Engineering is one of the most popular courses in India and there are many institutes that offer the course to aspiring students. 
+Lakhs of students enroll every year in this prestigious and most popular course, BTech course is one of the most sought after courses in India. 
+India produces more than 10 lakh engineering graduates every year and the engineering education in India comprises around 2500 engineering colleges and 1300 polytechnic colleges. 
+For admissions, the most common BTech entrance examinations are JEE Main and JEE Advanced. 
+Along with these national level entrance examinations, there are many state and private level entrance examinations that the students can attempt for admission to the course. 
+The basic eligibility criteria for BTech is class 12 with Physics, Chemistry and Mathematics. However, there are additional criteria in every entrance exam and institute.
+ Some of the institutes also conduct admission to their courses on merit basis i.e. based on marks scored by candidates in their class 12 board exams.
+BTech Course Highlights:
+ The BTech course is spread over eight semesters. Listed below are some of the major highlights of the course such as course structure,
+    course level, examination type, average starting salary, and job profiles:
+</h4>
+   <table border="5">
+    <tr>
+<th>PARTICULARS</th>
+<th>DETAILS</th>
+
+    </tr>
+    <tr>
+        <th>Course Level </th>
+        <th>Undergraduate</th>
+        
+     </tr>
+     <tr>
+        <th>Course Name </th>
+        <th>Bachelor of Technology</th>
+                
+    </tr>
+     <tr>
+        <th>Course Duration</th>
+        <th>4 years</th>
+                        
+    </tr> 
+    <tr>
+         <th>Examination Type </th>
+        <th>Semester-wise</th>
+                                
+    </tr>
+    <tr>
+         <th>Course fee  </th>
+        <th>INR 5- 9 lakh</th>
+                                        
+     </tr> 
+     <tr>
+           <th>Average Salary</th>
+        <th>INR 4- 10 LPA
+        </th>
+                                                
+    </tr> 
+    <tr>
+        <th>Job Scope    </th>
+        <th>Chemical Engineer, Mechanical Engineer, Computer Science Engineer, Research Associate, Professor</th>
+                                                        
+    </tr> 
+    <tr>
+        <th>Entrance Exam </th>
+        <th>JEE Main, JEE Advanced, WBJEE, KEAM, AP EAMCET, TS EAMCET</th>
+                                                                
+    </tr>
+    <tr>
+        <th>Entrance Exam </th>
+        <th>JEE Main, JEE Advanced, WBJEE, KEAM, AP EAMCET, TS EAMCET</th>
+                                                                
+    </tr>
+</table>
+ <h2> Why Pursue BTech?:</h2>>
+<h4>	While all these specialisations offer bright prospects for students to get into different careers, Computer Science Engineering is probably one of the most sought after course nowadays. 
+    This is also reflected in the high cut off exam scores that top engineering colleges including Indian Institutes of Technology (IITs), the Indian Institute of Information Technology (IIITs)
+     and the National Institutes of Technology (NITs) as well as some of the best central universities command from their respective applicants in order to enrol them for this course.
+</h4>
+<h2>Who Should Pursue BTech?:</h2>
+<h4>BTech degrees offer students an opportunity to pursue a career in Engineering. The courses are of a duration of 4-years and are spread across 8 semesters. 
+    There are typically two kinds of engineering course:
+  -3-year Lateral-Entry BTech after Diploma in Engineering
+  -4-year BTech after Class 12
+  -The four-year course offers more rigour to students and also covers more with respect to the depth of the curriculum
+</h4>
+<h2>Eligibility Criteria for BTech:</h2>
+<h4>The basic eligibility requirement for admissions to any BTech course is:
+  -Candidates must have passed the class 12 exam from a recognised board with Physics, Chemistry and Mathematics as core subjects.
+  -They must also have secured minimum aggregate marks of 60% in the above subjects combined.
+  -Most admissions are done based on the student's performance in the entrance examination. 
+  -The regular mode of entry to BTech course is through entrance examination after Class 12. 
+  The other mode is called as Lateral-Entry mode, wherein candidates can enrol in BTech course in second year.
+  -Those who possess three-year diploma course in engineering can enrol in BTech under Lateral-Entry Scheme.
+  -Please note that the BTech eligibility criteria would vary from institute to institute
+</h4>
+<h2>Admission Process for BTech:</h2>
+<h4>All the BTech course aspirants need to follow a similar process for admission to any institute. Various stages for BTech admissions are given below:
+Firstly, BTech course aspirants need to appear and qualify for any of the entrance exams for admission to an institute.
+National level engineering entrance exams such as JEE Main are accepted by NITs, IIITs, GFTIs and several other private colleges. 
+JEE Advanced is the entrance exam conducted for admission to IITs.
+Other than the aforesaid two exams, B Tech Admissions are also conducted through state-level exams such as WBJEE, KEAM, 
+AP EAMCET, TS EAMCET, MHT CET etc. and university/college level exams such as BITSAT, VITEEE, SRMJEEE, UPESEAT, etc.
+All the engineering entrance exams are conducted in April, May and June every year.
+After the result declaration of every exam, counselling and seat allotment process has been conducted by the concerned authorities.
+ During counselling, students have to choose college and courses of their choice based on their ranks.
+After seat allotment, every student needs to visit the allotted engineering college to complete the admission formalities.
+</h4>
+<h2>BTech Specialisations</h2>
+<h4>In India, a BTech degree is offered across various specialisations which are popular amongst students.
+     The market demand has made it pertinent on professionals to acquire the appropriate skillset and knowledge-base. 
+     Computer Science, Mechanical and Civil Engineering are some of the most popular specialisations. 
+     But, with the development of specific research areas, Aerospace Engineering, Marine Engineering, Petroleum Engineering have also become very popular branches.  
+</h4>
+<h2>BTech Specialisations</h2>
+ 	<h2> 1.Computer Science Engineering: </h2>
+     <h4>CSE engineering comprises the basic knowledge of computer programming and networking. 
+     The computer science engineering course will give ample knowledge about the implementation, design and 
+     management of the entire information system in hardware and software aspects.</h4>
+	 <h2>2.Information Technology Engineering: </h2>   
+     <h4>IT engineers are those who design and implement computer hardware, software and networks. 
+     They are involved in the logical design of computers, how data is stored, transmitted and accessed by computers. 
+     They create the blueprints for software programs, which tell computers how to store, access and transmit data.
+</h4>
+	 <h2>3.Mechanical Engineering: </h2> 
+     <h4> Mechanical Engineering can find employment in aerospace, chemical manufacturing plants, automobiles, research and development, oil exploration, railway factories and many others.
+ 	 </h4>	 
+	 <h2>4.Aerospace Engineering:</h2>  
+     <h4>Aerospace Engineering is a branch of engineering that aims at equipping students with relevant skills and knowledge to design and manufacture spacecrafts, aircrafts and other related systems. 
+     This technical job requires a high attention to detail and needs professionals with excellent numeracy and IT skills. 
+	 </h4>
+ 	 <h2>5.Civil Engineering:</h2>    
+     <h4>Civil engineering is important as it makes the world a more habitable place – providing us with buildings, bridges, roads, hospitals, airports, tunnels, stadiums, homes, and more. 
+     Civil engineers design, build and maintain the infrastructure that we have all around us, and often take for granted.
+	</h4>
+	  <h2>6.Ceramic Engineering: </h2>    
+      <h4>Ceramic Engineering focuses on creating products by using non-metallic inorganic materials by combining various scientific technologies.
+       The most customary objects formed include fibre optic products, pollution control devices, coating for space vehicles, glassware, components of nuclear fuel, etc.
+	</h4>
+	  <h2>7.Electronics & Communication Engineering: </h2>  
+      <h4>ECE course is popular amongst candidates who wish to enter into the field of telecommunications, manufacturing and production of communications and satellite systems. 
+      The course offers promising career opportunities across various private and government manufacturing and production units.
+	</h4>
+	  <h2>8.Metallurgical Engineering:</h2>    
+      <h4>Metallurgical Engineers extract, refine and recycle metals. They solve problems such as reducing corrosion, maintaining heat levels and increasing the strength of the product.
+       They help develop or improve metals that are used in healthcare, transportation, defense and entertainment industry.
+	 </h4>
+ 	  <h2>9.Electrical Engineering: </h2> 
+       <h4>An electrical engineer can design, manufacture, and market marketing equipment. 
+       The field of application is wide because today's world depends on electrical energy to function. 
+       In this way, the job sources are varied. On the other hand, no day is the same as the previous one when working with devices. 
+	 </h4>
+	 <h2>10.Marine Engineering: </h2>   
+     <h4>Marine engineering applies a number of engineering sciences, including mechanical engineering, electrical engineering, electronic engineering,
+      and computer science, to the development, design, operation and maintenance of watercraft propulsion and ocean systems. 
+</h4>
+Which is the best course in B. Tech.?:
+	
+ 		Here is the list of the most in-demand and trending tech skills that will offer you a successful career:
+	1.Data Science:  Data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.
+
+	 2.Cloud Computing:  cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.
+	
+	 3.Artificial Intelligence:   Artificial intelligence (AI) is a fast-growing branch of computer science focused on enabling computers to perform a wide range of tasks that previously required human intelligence.
+
+	 4.DevOps:    DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
+	
+	 5.Blockchain:   Blockchain is a type of shared database that differs from a typical database in the way it stores information; blockchains store data in blocks linked together via cryptography. Different types of information can be stored on a blockchain, but the most common use for transactions has been as a ledger.
+  	6.RPA (Robotic Process Automation):    Robotic process automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate humans actions interacting with digital systems and software. Just like people, software robots can do things like understand what’s on a screen, complete the right keystrokes, navigate systems, identify and extract data, and perform a wide range of defined actions. But software robots can do it faster and more consistently than people, without the need to get up and stretch or take a coffee break.
+
+	 7.Augmented Reality (AR) and Virtual Reality (VR):    AR uses a real-world setting while VR is completely virtual. AR users can control their presence in the real world; VR users are controlled by the system. VR requires a headset device, but AR can be accessed with a smartphone. AR enhances both the virtual and real world while VR only enhances a fictional reality.
+
+	 8.Cybersecurity:      Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users via ransomware; or interrupting normal business processes.
+      career options after btech:
+ 	After completing the B. Tech course, the natural flow is that aspirants take admission to an M. Tech program. You can prepare for the GATE (Graduate Aptitude Test in Engineering) exam that will test your comprehensive understanding of undergraduate engineering subjects and help you enter the IITs and NITs
+ 	When it comes to salary, government positions pay well, and even if you start out low in the private sector and work your way up, you may make substantial money in this industry. Once you join a company and prove your worth, incentives and allowances are also countable benefits of a B tech degree.21-Feb-2023
+	
+	<h2>What to do after BTech:</h2>
+ <h4> 1.Apply for campus placement. ...
+  2.Start your own business. ...
+  3.Pursue higher studies. ...
+  4.Get a professional certification. ...
+  5.Find an internship. ...
+  6.Apply for UPSC Civil Services/Engineering Services. ...
+  7.Study business and management.</h4>
+</span> 
+</pre>
+<a href="afterbtech.html" ><img src="afbt.jpg" width="400" height="300" /></a>
+</fieldset>
+</body>
+</html>

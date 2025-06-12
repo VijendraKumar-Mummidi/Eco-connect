@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <style>
+          *{
+            margin: 0%;
+
+  
+            }
+            body{
+                background-image: url('webshot.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .txt{
+                font-size: 40px;
+                padding: 12px 24px;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+            .img{
+                position: relative;
+                left: 0;
+                top: 0;
+            }
+            .image1{
+                position: absolute;
+                top: 0px;
+                left: 1375px;
+            }
+            .image2{
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .upload{
+                position: relative;
+                top: 70px;
+                left: 600px;
+            }
+            .upload1{
+                position: relative;
+                top: 70px;
+                left: 670px;
+            }
+            .student {
+                 display: student;
+                 width: 25%;
+                 height:7%;
+                 border: none;
+                 background-color:#000000; 
+                 color: #0cc2ef;
+                 padding: 14px 28px;
+                 font-size: 25px;
+                 cursor: pointer;
+                 text-align: center;
+            }
+            .button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+   .upload_button
+   {
+    position: relative;
+                top: 70px;
+                left: 600px;
+   }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1 class="txt">College E-Library</h1>
+        <div class="img">
+            <img src="adt_logo-removebg-preview.png" width="120" height="75" class="image1">
+            <img src="adt_logo-removebg-preview.png" width="120" height="75" class="image2">
+        </div>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename" class="upload1 ">
+                <input type="submit" class="upload_button"><span></span>
+              </form>
+        </div>
+    </body>>
+</html>
+          

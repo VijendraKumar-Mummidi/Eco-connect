@@ -1,0 +1,414 @@
+<html>
+<head>
+<title>CAREERGUIDE</title>
+<style>
+  *{
+margin: 0%;
+
+  
+  }
+.para {
+background-color: blue;
+font-family: bold;
+
+  color: white;
+width: 1600px ;
+height: 36px ;
+padding-top: 20;
+padding-right: 10 ;
+padding-left: 10 ;
+
+padding-bottom: 15 ;
+}
+
+.concept  {
+font-size: 20;
+font-family: arial, san-serif;
+color: white; 
+
+}
+.scroll {
+font-size: 20;
+color: black;
+width: 600;
+}
+.button3 {
+  border-radius: 10px;
+  background-color: indigo;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 20px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+
+.button2 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 20px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.button4 {
+  border-radius: 10px;
+  background-color:blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button4:hover span {
+  padding-right: 20px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+.navbar {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.navbar1 {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar1 a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown1 .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown1:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown1-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.student {
+  display: student;
+  width: 25%;
+  height:7%;
+  border: none;
+  background-color: indigo; 
+  color: #0cc2ef;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.txt{
+font-size:30px;
+color: white;
+  background-color: #f4511e; 
+border: none;
+padding-bottom: 10;
+}
+
+.sudent:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body style="background-color: #FFFFFF;">
+  <pre><span class= "para"><button onclick = "window.location.href ='home.html';" class="button2"><span>HOME</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='gogreen.html';" class="button2"><span>GOGREEN</span></button>&emsp;&emsp; <button onclick = "window.location.href ='healthcare.html';" class="button2"><span>HEALTH CARE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick = "window.location.href ='carrerguide.html';" class="button2"><span>CARRER GUIDE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='sports.php';" class="button2"><span>SPORTS</span></button> <button  onclick = "window.location.href ='referencecenter.html';"class="button4"><span>REFERENCE CENTER</span></button> </span></pre> 
+
+<pre>
+<span style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20; box-shadow: #ddd; color: black; margin: 0%; border: 0px;">
+  <br>
+  <h1>Industrial Training Institute:---</h1>
+  <h3>Industrial Training Institutes (ITI) are government-led training institutes established by the Directorate General of Employment & Training
+   (DGET), Ministry of Labour & Employment, Government of India. These Industrial Training Institutes offer training in many technical streams. 
+  These work with the aim to provide technical manpower to the fast-emerging industrial sector of the developed and developing economy</h3>
+  
+  <h1>ITI Admission Eligibility</h1>
+  <h3> Candidates willing to pursue ITI must satisfy the minimum eligibility criteria for admission. Following are the basic eligibility conditions one should fulfil to be eligible for admission to the course-
+
+    Candidates who are between 14 to 40 of age on the date of the start of the admission session are eligible for admission to ITIs and ITCs.
+    The requirement for educational qualification is subjective and varies from class 8 to class 12 depending on the course one chooses to pursue.
+    Age relaxation of five years is provided to ex-servicemen and war widows.
+    </h3>
+  
+  <h1> Certification and Assessment</h1>
+  <h3>A total weightage of 100 per cent is applied for six months and one-year course duration courses and 50 per cent of weightage is applied to each examination for two-year courses, 
+  for the purpose of determining the overall result. Candidates are required to score a minimum of 60 per cent in practicals and 40 per cent in theory.
+  </h3>
+  <h1>ITI Courses</h1>
+  <h3>Computer operator and programming assistant
+  Craftsman food production general
+  Carpenter
+  Draughtsman civil
+  Electrician
+  Electronic mechanic
+  Fashion technology
+  Fitter
+  Hair and skincare
+  Health sanitary inspector
+  Information technology and electronics system maintenance
+  Library and information science
+  Machinist
+  Mechanic diesel
+  Mechanic Radio and television
+  Painter general
+  Photographer
+  Radiology technician
+  Surveyor
+  Tool and die maker dies and moulds
+  Urner
+  Wireman
+</h3>
+ <h1> ITI Salary</h1>
+  <h3>The salary of the candidates after ITI will vary as per the trade selected by them. 
+  For example, a fitter can earn 2 lacs per annum while a surveyor after ITI can earn 3 lacs per annum. 
+  The following table can be referred to know the average annual salary of of some of the trades after ITI-
+  
+  Salary after ITIJob RoleAverage Annual Salary</h3>
+  <br>
+  <table border="10">
+    <tr>
+        <th>ROLE</th>
+        <th>SALARY</th>
+    </tr>
+    <tr>
+        <td> Electrician  </th>
+        <td> Rs. 1.1 lakhs</td>
+    </tr>
+    <tr>
+        <td>Refrigeration Engineer </th>
+        <td> Rs. 2 lakhs</td>
+    </tr>
+    <tr>
+        <td>Plumber      </th>
+        <td>  Rs. 2 lakhs</td>
+    </tr>
+
+    <tr>
+        <td> Stenographer</th>
+        <td> Rs. 2.6 lakhs</td>
+    </tr>
+    <tr>
+        <td>  Computer Operator & Programming Assistant</th>
+        <td> 1.7 lakhs to Rs 2.4 lakhs</td>
+    </tr>
+  </table><br>
+</span> 
+</pre>
+<a href="afteriti.html" ><img src="afiti.jpg" width="400" height="300" /></a>
+</fieldset>
+</body>
+</html>

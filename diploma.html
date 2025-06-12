@@ -1,0 +1,411 @@
+<html>
+<head>
+<title>CAREERGUIDE</title>
+<style>
+  *{
+margin: 0%;
+
+  
+  }
+.para {
+background-color: blue;
+font-family: bold;
+
+  color: white;
+width: 1600px ;
+height: 36px ;
+padding-top: 20;
+padding-right: 10 ;
+padding-left: 10 ;
+
+padding-bottom: 15 ;
+}
+
+.concept  {
+font-size: 20;
+font-family: arial, san-serif;
+color: white; 
+
+}
+.scroll {
+font-size: 20;
+color: black;
+width: 600;
+}
+.button3 {
+  border-radius: 10px;
+  background-color: indigo;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 20px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+
+.button2 {
+  border-radius: 10px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 20px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+.button4 {
+  border-radius: 10px;
+  background-color:blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 1px;
+  width: 350px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.button4 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button4 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button4:hover span {
+  padding-right: 20px;
+}
+
+.button4:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+
+
+.navbar {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.navbar1 {
+ border-radius: 20px;
+  background-color: indigo;
+  border: none;
+  overflow: hidden;
+transition: all 0.5s;
+  cursor: pointer;
+  margin: 0px;
+  width: 18%;
+  height:9%;
+}
+
+.navbar1 a {
+text-align: center;
+  float: right;
+  font-size: 16px;
+  color: white;
+  
+  padding: 14px 10px;
+  text-decoration: none;
+}
+
+.dropdown1 {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown1 .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #0cc2ef;
+  padding: 14px 13px;
+  background-color:#000000;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar1 a:hover, .dropdown1:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown1-content a {
+  float: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 25px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown1-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown1:hover .dropdown1-content {
+  display: block;
+}
+
+</style>
+</head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.student {
+  display: student;
+  width: 25%;
+  height:7%;
+  border: none;
+  background-color: indigo; 
+  color: #0cc2ef;
+  padding: 14px 28px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+.txt{
+font-size:30px;
+color: white;
+  background-color: #f4511e; 
+border: none;
+padding-bottom: 10;
+}
+
+.sudent:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body style="background-color: #FFFFFF;">
+  <pre><span class= "para"><button onclick = "window.location.href ='home.html';" class="button2"><span>HOME</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='gogreen.html';" class="button2"><span>GOGREEN</span></button>&emsp;&emsp; <button onclick = "window.location.href ='healthcare.html';" class="button2"><span>HEALTH CARE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick = "window.location.href ='carrerguide.html';" class="button2"><span>CARRER GUIDE</span></button>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <button onclick = "window.location.href ='sports.php';" class="button2"><span>SPORTS</span></button> <button  onclick = "window.location.href ='referencecenter.html';"class="button4"><span>REFERENCE CENTER</span></button> </span></pre> 
+
+
+<br>
+<span style=" font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 20; box-shadow: #ddd; color: black; margin: 0%; border: 0px;">
+  <pre><h1>DIPLOMA:---</h1>
+  <h4> Diploma Courses after 10th are short-term courses which teach the skills applicable to the real world rather than the things that a conventional degree teaches. 
+  Candidates can pursue the diploma courses after 10th in various fields like Business, Management, Marketing, Computer Application, etc.
+  The average starting salary range for holders of a diploma degree is between 3.4 LPA and 4.7 LPA at reputable organizations. 
+  In India, diploma courses are available in a number of specializations including engineering, computer science, hospitality, management, etc.
+  
+  Course Level:--Diploma
+  Duration:--3 years
+  Examination Type:--Semester type
+  Eligibility	10th examinations
+  Admission Process	Merit-based or Entrance-based
+  Top recruiting organizations	HP Enterprise, Mentor Graphics, Raana Semiconductors Private Limited, Techabyte Private Limited, TATA Power Strategic Engineering Division, Spider focus Solutions
+  Top recruiting areas	Electrical and electronic field, IT sectors, Colleges, and Universities, Communication and Media, Automobiles, Media, Advertising, Telecom Services
+</h4>
+  
+<h1> Diploma in Civil Engineering After 10th:</h1>
+<h4>Diploma in Civil Engineering is a 3-year-long diploma programme for candidates who have completed their Class 10 and want to pursue civil engineering as a career. 
+  It is a reputable diploma programme that offers several job opportunities to young students. 
+  The Diploma in Civil Engineering fees vary between Rs. 50,000 and Rs. 5,00,000. 
+</h4>
+<h1>Diploma in Automobile Engineering After 10th:</h1>
+<h4>Diploma in Automobile Engineering is a full-time certificate program of duration three years. 
+  It is a diploma-level Automobile engineering course, the sub-branch of Mechanical Engineering. 
+  Candidates for the Diploma in Automobile Engineering course must have completed class 10th with
+   a minimum of 60% marks and mathematics and Science as critical subjects of study from a recognized board.
+  </h4>
+  <h1> Diploma Courses After 10th In Computer Science And Engineering:</h1>
+<h4>A diploma in computer science engineering provides a basic understanding of computer science, engineering concepts, and mathematical techniques. 
+  The course lasts for three years and combines both theoretical and practical concepts.
+   After completing this course, students can find job offers from research, communication, medical, and IT firms.
+  </h4>
+  <h1>Diploma in Pharmacy after 10th:</h1>
+  <h4>The diploma in Pharmacy course is three years long. After the 10th, certificates or practising courses are available for the students.
+   12th Science passed students are eligible to pursue this course. To secure admission into reputed colleges, one must crack relevant Diploma entrance tests.
+  </h4>>
+  
+  <h1> in Information Technology after 10th:</h1>
+<h4>Information technology means creating a network for communication at a company or workplace, and pursuing a diploma in information technology teaches
+   subjects related to computers, allowing the students to work in the computer or IT Sector. 
+  
+  The initial salary of a diploma in information technology is 1.5 lakhs to 3 lakhs per year. The candidates can find various job opportunities as web developers,
+   IT developers, web designers, etc., in government jobs, IT, banking, and transport. 
+  </h4>
+  
+  <h1> Diploma Course in Electrical Engineering After 10th:</h1>
+  <h4>A diploma in Electrical Engineering is a three-year engineering programme that teaches students subjects such as Electrical Circuit Theory, 
+  Electronic Devices and Circuits, Transducers and Signal Conditioners, Power Systems, etc. Students can pursue it after completing class 10.
+   The course deals with installation, maintenance, troubleshooting, magnetism, control systems, signal processing and telecommunications. 
+   The eligibility for Diploma in Electrical Engineering courses is a minimum score of 50% marks in class 10. A relaxation of 5% is provided to the 
+   candidate who belongs to reserved categories.</h4>
+  
+  <h1>Diploma In Mechanical Engineering After 10th Courses: </h1>     
+  <h4>A diploma in Mechanical Engineering is a three-year polytechnic course that students can pursue after class 10.
+   A certificate in Mechanical Engineering deals with designing, manufacturing and maintaining mechanical equipment by applying the basic principles of mechanics.
+    Mechanical Diploma or Mechanical Engineering polytechnic courses are offered to the candidates immediately after their 10th or equivalent exam. 
+    The eligibility for Mechanical diploma courses is a minimum score of 55% marks in class 10. 
+    A relaxation of 5% is provided to the candidates in the reserved categories.
+  
+  Duration of Diploma in Mechanical Engineering 	3 Year
+  Eligibility Criteria 	Students must clear the 10th standard with 55% marks from a reputable school.
+  Admission Procedure 	Admission will be done based on entrance examination marks or Merit List.
+  Expectation Salary 	20-30k 
+  Job position 	Trainee, Mechanical Designer, Lecturer & Professor, Assist. Manager, Mechanical Engineer, Consultant Mechanical, Site Mechanical Engineer.
+</h4>
+  <h1>Diploma After 10th In Electrical & Electronics Engineering:</h1>
+  <h4>An Electrical and Electronics Engineering diploma is a 3-year full-time diploma-level engineering course.
+   Candidates who have completed the 10th examination with Mathematics and Science stream or an equivalent examination from a recognized board 
+   with 55% marks are eligible for Diploma in Electrical and Electronics Engineering course. 
+   Most colleges and universities offer Diplomas in Electronics Engineering courses. Every college and university has different eligibility criteria,
+   admission processes, fee structure, and syllabi for this course.</h4>
+</pre>
+  
+</span> 
+</p>
+<a href="afterdiploma.html" ><img src="afdip.jpg" width="400" height="300" /></a>
+</fieldset>
+</body>
+</html>

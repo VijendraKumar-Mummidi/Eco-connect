@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>E-CONNECT</title>
+
+    </head>
+    <body style="background-image: url('revsys.jpg');background-size: cover;">
+        <style>
+            * {
+              margin: 0%;  
+            }
+            
+        .button2 {
+            border-radius: 10px;
+            background-color: blue;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 1px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 0px;
+        }
+
+        .button2 span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button2 span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button2:hover span {
+            padding-right: 20px;
+        }
+
+        .button2:hover span:after {
+            opacity: 1;
+            right: 0;
+
+        }
+        </style>
+       
+        <p style="background-color: black; color: #FFFFFF;padding: 10px; font-size: 100; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-align: center;">REVIEW SYSTEM</p>
+            <br>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       &emsp; <center><button onclick = "window.location.href ='lecturer_signin3.php';" class="button2"><span>LOGIN</span></button>
+       &emsp; <button onclick = "window.location.href ='lecturer_signin2.php';" class="button2"><span>SIGNUP</span></button>
+     </center>
+
+
+    </body>
+</html>
