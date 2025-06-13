@@ -4,6 +4,7 @@ Overview:
 The project "Eco-Connect" is a multi-functional web-based platform developed
 using HTML, PHP, and media resources to spread awareness, guidance, and information on key societal topics. 
 It aims to educate users across four major categories — Education, Health, Sports, and Organic Farming — in 
+a well-organized and visually engaging manner.
 
 ## Description:
 A multipurpose educational platform to promote awareness on:
@@ -22,4 +23,3 @@ A multipurpose educational platform to promote awareness on:
 1. Open `index.html` in a browser.
 2. Use XAMPP to test PHP forms (copy to `htdocs`).
 3. Import `*.sql` into PHPMyAdmin to setup DB.
-a well-organized and visually engaging manner.
